@@ -1,4 +1,4 @@
-# yahoo_finance_get_historical_fix
+# yahoo_finance_get_historical_workaround
 A workaround for the recently discontinued get_historical() functionality for yahoo_finance API.
 
 It looks like this functionality has been discontinued: 
