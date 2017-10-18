@@ -4,7 +4,7 @@ from BeautifulSoup import BeautifulSoup as bs
 def get_historical_data(name, number_of_days):
 	data = []
 	url = "https://finance.yahoo.com/quote/" + name + "/history/"
-	rows = bs(urllib2.urlopen(url).read()).findAll('table')[1].tbody.findAll('tr')
+	rows = bs(urllib2.urlopen(url).read()).findAll('table')[0].tbody.findAll('tr')
 
 	for each_row in rows:
 		divs = each_row.findAll('td')
